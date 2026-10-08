@@ -2,74 +2,93 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
 
+    <!-- ======================= DOCUMENT CONFIGURATION ======================== -->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta
         name="description"
-        content="André Batista — Software Developer portfolio. Backend development, APIs, systems and technology."
+        content="André Batista — Software Developer focused on backend development, APIs, systems and problem solving."
     >
 
     <title>André Batista | Software Developer</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
     <!-- ======================= NAVIGATION ======================== -->
+    <nav class="navbar">
 
-    <header class="navbar">
+        <div class="nav-container">
 
-        <a href="#home" class="logo">
-            ANDRÉ_
-        </a>
+            <a href="#personnel" class="nav-logo">
+                AB
+            </a>
 
-        <nav>
-            <a href="#about">PERSONNEL</a>
-            <a href="#skills">TECHNICAL</a>
-            <a href="#projects">MISSIONS</a>
-            <a href="#experience">SERVICE</a>
-            <a href="#education">EDUCATION</a>
-            <a href="#contact">TRANSMISSION</a>
-        </nav>
+            <div class="nav-links">
 
-    </header>
+                <a href="#personnel">PERSONNEL</a>
+                <a href="#technical">TECHNICAL</a>
+                <a href="#missions">MISSIONS</a>
+                <a href="#service">SERVICE</a>
+                <a href="#education">EDUCATION</a>
+                <a href="#transmission">TRANSMISSION</a>
+
+            </div>
+
+        </div>
+
+    </nav>
 
 
-    <!-- ======================= HERO ======================== -->
+    <!-- ======================= HERO SYSTEM ======================== -->
+    <header class="hero">
 
-    <main>
+        <div class="hero-container">
 
-        <section id="home" class="hero">
+            <div class="hero-terminal">
+
+                <p>&gt; INITIALIZING COGITATOR SYSTEM...</p>
+                <p>&gt; ACCESSING PERSONNEL DATABASE...</p>
+                <p>&gt; CONNECTION ESTABLISHED</p>
+
+            </div>
+
 
             <div class="hero-content">
 
-                <div class="hero-terminal">
-
-                    <p>&gt; INITIALIZING COGITATOR SYSTEM...</p>
-                    <p>&gt; ACCESSING PERSONNEL DATABASE...</p>
-                    <p>&gt; CONNECTION ESTABLISHED</p>
-
-                </div>
-
-                <h1>ANDRÉ BATISTA</h1>
-
-                <h2>SOFTWARE DEVELOPER</h2>
-
-                <p class="hero-description">
-                    Systems Analysis and Development student focused on backend
-                    development, APIs, systems and problem solving through technology.
+                <p class="hero-label">
+                    PERSONNEL RECORD
                 </p>
 
-                <div class="hero-buttons">
+                <h1>
+                    ANDRÉ<br>
+                    BATISTA
+                </h1>
 
-                    <a href="#projects" class="btn btn-primary">
+                <p class="hero-role">
+                    SOFTWARE DEVELOPER
+                </p>
+
+                <p class="hero-description">
+                    Systems Analysis and Development student focused on
+                    backend development, APIs, systems and problem solving
+                    through technology.
+                </p>
+
+
+                <div class="hero-actions">
+
+                    <a href="#missions" class="btn btn-primary">
                         ACCESS MISSIONS
                     </a>
 
-                    <a href="#contact" class="btn">
+                    <a href="#transmission" class="btn btn-secondary">
                         OPEN TRANSMISSION
                     </a>
 
@@ -77,36 +96,56 @@
 
             </div>
 
-            <div class="hero-scroll">
-                ↓ ACCESSING ARCHIVE
+        </div>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- ======================= PERSONNEL ======================== -->
+        <section id="personnel" class="section">
+
+            <div class="section-header">
+
+                <span class="section-index">
+                    01
+                </span>
+
+                <div>
+
+                    <p class="section-label">
+                        PERSONNEL RECORD
+                    </p>
+
+                    <h2>
+                        ABOUT ME
+                    </h2>
+
+                </div>
+
             </div>
 
-        </section>
-
-
-        <!-- ======================= PERSONNEL RECORD ======================== -->
-
-        <section id="about">
-
-            <h2>PERSONNEL RECORD</h2>
 
             <div class="about-grid">
 
                 <div class="about-text">
 
                     <p>
-                        My name is André Batista and I am a Systems Analysis and
-                        Development student at FATEC Cruzeiro.
+                        My name is André Batista and I am a Systems Analysis
+                        and Development student at FATEC Cruzeiro.
                     </p>
 
                     <p>
-                        I am primarily interested in backend development, APIs,
-                        systems and solving problems through technology.
+                        I am primarily interested in backend development,
+                        APIs, systems and solving problems through technology.
                     </p>
 
                     <p>
-                        I continuously work on developing my technical skills through
-                        academic projects, personal projects and professional experience.
+                        I continuously work on developing my technical skills
+                        through academic projects, personal projects and
+                        professional experience.
                     </p>
 
                 </div>
@@ -114,29 +153,33 @@
 
                 <div class="status-panel">
 
-                    <div class="status-line">
-                        <span class="status-label">STATUS</span>
-                        <span class="status-value status-online">ACTIVE</span>
+                    <div class="status-title">
+                        SYSTEM STATUS
                     </div>
 
                     <div class="status-line">
-                        <span class="status-label">ROLE</span>
-                        <span class="status-value">SOFTWARE DEVELOPER</span>
+                        <span>STATUS</span>
+                        <strong>ACTIVE</strong>
                     </div>
 
                     <div class="status-line">
-                        <span class="status-label">EDUCATION</span>
-                        <span class="status-value">FATEC CRUZEIRO</span>
+                        <span>ROLE</span>
+                        <strong>SOFTWARE DEVELOPER</strong>
                     </div>
 
                     <div class="status-line">
-                        <span class="status-label">SECTOR</span>
-                        <span class="status-value">BACKEND / APIs</span>
+                        <span>EDUCATION</span>
+                        <strong>FATEC CRUZEIRO</strong>
                     </div>
 
                     <div class="status-line">
-                        <span class="status-label">ORIGIN</span>
-                        <span class="status-value">BRAZIL</span>
+                        <span>SECTOR</span>
+                        <strong>BACKEND / APIs</strong>
+                    </div>
+
+                    <div class="status-line">
+                        <span>ORIGIN</span>
+                        <strong>BRAZIL</strong>
                     </div>
 
                 </div>
@@ -147,63 +190,196 @@
 
 
         <!-- ======================= TECHNICAL ARCHIVE ======================== -->
+        <section id="technical" class="section">
 
-        <section id="skills">
+            <div class="section-header">
 
-            <h2>TECHNICAL ARCHIVE</h2>
+                <span class="section-index">
+                    02
+                </span>
+
+                <div>
+
+                    <p class="section-label">
+                        TECHNICAL ARCHIVE
+                    </p>
+
+                    <h2>
+                        TECHNICAL SKILLS
+                    </h2>
+
+                </div>
+
+            </div>
+
 
             <div class="skills-grid">
 
-                <div class="skill-card">
 
-                    <h3>BACKEND</h3>
+                <div class="skill-group">
 
-                    <div class="skill-list">
+                    <div class="skill-icon">
+                        01
+                    </div>
+
+                    <h3>
+                        BACKEND DEVELOPMENT
+                    </h3>
+
+                    <div class="skill-tags">
+
                         <span>PHP</span>
                         <span>Laravel</span>
                         <span>Java</span>
+                        <span>REST APIs</span>
+
                     </div>
+
+                    <p>
+                        Backend development focused on APIs, business logic,
+                        authentication, data processing and system integration.
+                    </p>
 
                 </div>
 
 
-                <div class="skill-card">
+                <div class="skill-group">
 
-                    <h3>DATABASE</h3>
+                    <div class="skill-icon">
+                        02
+                    </div>
 
-                    <div class="skill-list">
+                    <h3>
+                        DATABASES
+                    </h3>
+
+                    <div class="skill-tags">
+
                         <span>MySQL</span>
                         <span>SQL</span>
+                        <span>Relational Databases</span>
+
                     </div>
+
+                    <p>
+                        Experience working with relational databases, queries,
+                        data modeling and application persistence.
+                    </p>
 
                 </div>
 
 
-                <div class="skill-card">
+                <div class="skill-group">
 
-                    <h3>COMMUNICATION</h3>
+                    <div class="skill-icon">
+                        03
+                    </div>
 
-                    <div class="skill-list">
+                    <h3>
+                        APIs &amp; INTEGRATION
+                    </h3>
+
+                    <div class="skill-tags">
+
                         <span>REST</span>
-                        <span>APIs</span>
                         <span>Authentication</span>
-                        <span>Integrations</span>
+                        <span>Sanctum</span>
+                        <span>API Integration</span>
+
                     </div>
+
+                    <p>
+                        Development and integration of REST APIs with
+                        authentication, authorization and communication
+                        between systems.
+                    </p>
 
                 </div>
 
 
-                <div class="skill-card">
+                <div class="skill-group">
 
-                    <h3>TOOLS & SYSTEMS</h3>
+                    <div class="skill-icon">
+                        04
+                    </div>
 
-                    <div class="skill-list">
+                    <h3>
+                        TOOLS &amp; SYSTEMS
+                    </h3>
+
+                    <div class="skill-tags">
+
                         <span>Git</span>
                         <span>GitHub</span>
                         <span>Linux</span>
+                        <span>VirtualBox</span>
+
                     </div>
 
+                    <p>
+                        Version control, collaborative development and
+                        experience working with Linux-based environments
+                        and virtual machines.
+                    </p>
+
                 </div>
+
+
+                <div class="skill-group">
+
+                    <div class="skill-icon">
+                        05
+                    </div>
+
+                    <h3>
+                        NETWORKING
+                    </h3>
+
+                    <div class="skill-tags">
+
+                        <span>TCP/IP</span>
+                        <span>DNS</span>
+                        <span>SSH</span>
+                        <span>Firewalls</span>
+
+                    </div>
+
+                    <p>
+                        Academic and laboratory experience with network
+                        configuration, services, addressing, DNS, SSH
+                        and basic infrastructure.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-group">
+
+                    <div class="skill-icon">
+                        06
+                    </div>
+
+                    <h3>
+                        PROBLEM SOLVING
+                    </h3>
+
+                    <div class="skill-tags">
+
+                        <span>Algorithms</span>
+                        <span>Data Structures</span>
+                        <span>Optimization</span>
+                        <span>Logical Reasoning</span>
+
+                    </div>
+
+                    <p>
+                        Experience applying algorithms, data structures
+                        and optimization techniques to solve practical
+                        problems.
+                    </p>
+
+                </div>
+
 
             </div>
 
@@ -211,36 +387,63 @@
 
 
         <!-- ======================= MISSION ARCHIVE ======================== -->
+        <section id="missions" class="section">
 
-        <section id="projects">
+            <div class="section-header">
 
-            <h2>MISSION ARCHIVE</h2>
+                <span class="section-index">
+                    03
+                </span>
+
+                <div>
+
+                    <p class="section-label">
+                        MISSION ARCHIVE
+                    </p>
+
+                    <h2>
+                        FEATURED PROJECTS
+                    </h2>
+
+                </div>
+
+            </div>
+
 
             <div class="projects-grid">
 
 
-                <!-- PROJECT 01 -->
-
+                <!-- ======================= BARBERSHOP API ======================== -->
                 <article class="project-card">
 
                     <div class="project-number">
                         MISSION 01
                     </div>
 
-                    <h3>Barbershop API</h3>
+                    <h3>
+                        BARBERSHOP API
+                    </h3>
 
                     <p>
-                        REST API developed with Laravel and PHP, featuring
-                        authentication, authorization, CRUD operations,
-                        UUIDs, validation, pagination and API documentation.
+                        REST API developed with Laravel for managing
+                        barbershop operations, users, appointments and
+                        business rules.
+                    </p>
+
+                    <p>
+                        The project includes authentication, authorization,
+                        CRUD operations, UUIDs, pagination, Form Requests,
+                        Service Classes and conflict validation.
                     </p>
 
                     <div class="project-tags">
+
                         <span>PHP</span>
                         <span>LARAVEL</span>
                         <span>MYSQL</span>
                         <span>REST API</span>
                         <span>SANCTUM</span>
+
                     </div>
 
                     <a
@@ -249,33 +452,41 @@
                         rel="noopener noreferrer"
                         class="project-link"
                     >
-                        ACCESS REPOSITORY
+                        ACCESS REPOSITORY →
                     </a>
 
                 </article>
 
 
-                <!-- PROJECT 02 -->
-
+                <!-- ======================= SMART RAM MANAGER ======================== -->
                 <article class="project-card">
 
                     <div class="project-number">
                         MISSION 02
                     </div>
 
-                    <h3>Smart RAM Manager</h3>
+                    <h3>
+                        SMART RAM MANAGER
+                    </h3>
 
                     <p>
-                        Resource optimization project developed with Laravel
-                        and PHP, applying the 0/1 Knapsack problem to prioritize
-                        memory allocation.
+                        Optimization project developed to prioritize
+                        processes according to available RAM resources.
+                    </p>
+
+                    <p>
+                        The project applies the 0/1 Knapsack problem and
+                        optimization techniques to determine which processes
+                        should receive available memory.
                     </p>
 
                     <div class="project-tags">
+
                         <span>PHP</span>
                         <span>LARAVEL</span>
                         <span>OPTIMIZATION</span>
                         <span>ALGORITHMS</span>
+
                     </div>
 
                     <a
@@ -284,33 +495,41 @@
                         rel="noopener noreferrer"
                         class="project-link"
                     >
-                        ACCESS REPOSITORY
+                        ACCESS REPOSITORY →
                     </a>
 
                 </article>
 
 
-                <!-- PROJECT 03 -->
-
+                <!-- ======================= STARDEX API ======================== -->
                 <article class="project-card">
 
                     <div class="project-number">
                         MISSION 03
                     </div>
 
-                    <h3>StarDex API</h3>
+                    <h3>
+                        STARDEX API
+                    </h3>
 
                     <p>
-                        REST API project built with Laravel, integrating
-                        external data from the Star Wars API and exposing
-                        structured resources through backend endpoints.
+                        REST API developed with Laravel and integrated
+                        with an external Star Wars data source.
+                    </p>
+
+                    <p>
+                        The project demonstrates API consumption,
+                        external service integration, backend logic
+                        and structured REST communication.
                     </p>
 
                     <div class="project-tags">
+
                         <span>PHP</span>
                         <span>LARAVEL</span>
                         <span>REST API</span>
                         <span>INTEGRATION</span>
+
                     </div>
 
                     <a
@@ -319,33 +538,41 @@
                         rel="noopener noreferrer"
                         class="project-link"
                     >
-                        ACCESS REPOSITORY
+                        ACCESS REPOSITORY →
                     </a>
 
                 </article>
 
 
-                <!-- PROJECT 04 -->
-
+                <!-- ======================= AXUR CHALLENGE ======================== -->
                 <article class="project-card">
 
                     <div class="project-number">
                         MISSION 04
                     </div>
 
-                    <h3>Axur Technical Challenge</h3>
+                    <h3>
+                        AXUR TECHNICAL CHALLENGE
+                    </h3>
 
                     <p>
-                        Technical challenge developed in Java involving data
-                        structures and analysis of HTML content through
-                        programmatic processing.
+                        Technical challenge developed in Java involving
+                        data structures, algorithms and HTML analysis.
+                    </p>
+
+                    <p>
+                        The project focuses on logical reasoning,
+                        structured data processing and implementation
+                        of programming concepts.
                     </p>
 
                     <div class="project-tags">
+
                         <span>JAVA</span>
                         <span>DATA STRUCTURES</span>
                         <span>HTML</span>
                         <span>ALGORITHMS</span>
+
                     </div>
 
                     <a
@@ -354,10 +581,11 @@
                         rel="noopener noreferrer"
                         class="project-link"
                     >
-                        ACCESS REPOSITORY
+                        ACCESS REPOSITORY →
                     </a>
 
                 </article>
+
 
             </div>
 
@@ -365,87 +593,218 @@
 
 
         <!-- ======================= SERVICE RECORD ======================== -->
+        <section id="service" class="section">
 
-        <section id="experience">
+            <div class="section-header">
 
-            <h2>SERVICE RECORD</h2>
+                <span class="section-index">
+                    04
+                </span>
 
-            <div class="experience-container">
+                <div>
 
-
-                <!-- STRINGHINI -->
-
-                <div class="experience-item">
-
-                    <div class="experience-date">
-                        CURRENT
-                    </div>
-
-                    <h3>Data Quality Intern</h3>
-
-                    <div class="experience-company">
-                        STRINGHINI
-                    </div>
-
-                    <p>
-                        Internship focused on Data Quality activities, including
-                        data validation, analysis and organization. Contributing
-                        to the accuracy, consistency and reliability of information
-                        used by the organization.
+                    <p class="section-label">
+                        SERVICE RECORD
                     </p>
 
-                </div>
-
-
-                <!-- OUTLIER -->
-
-                <div class="experience-item">
-
-                    <div class="experience-date">
+                    <h2>
                         PROFESSIONAL EXPERIENCE
-                    </div>
-
-                    <h3>AI Training & Evaluation</h3>
-
-                    <div class="experience-company">
-                        OUTLIER
-                    </div>
-
-                    <p>
-                        Worked on artificial intelligence training and evaluation,
-                        analyzing model responses, applying structured evaluation
-                        criteria and providing feedback to improve the quality
-                        and performance of AI systems.
-                    </p>
+                    </h2>
 
                 </div>
+
+            </div>
+
+
+            <div class="experience-list">
+
+
+                <!-- ======================= STRINGHINI ======================== -->
+                <article class="experience-card">
+
+                    <div class="experience-header">
+
+                        <div>
+
+                            <p class="experience-status">
+                                CURRENT POSITION
+                            </p>
+
+                            <h3>
+                                DATA QUALITY INTERN
+                            </h3>
+
+                            <span class="experience-company">
+                                STRINGHINI
+                            </span>
+
+                        </div>
+
+                        <span class="experience-date">
+                            2026 — PRESENT
+                        </span>
+
+                    </div>
+
+
+                    <div class="experience-divider"></div>
+
+
+                    <p class="experience-description">
+                        Internship focused on Data Quality, data validation,
+                        analysis and organization. Contributing to the
+                        accuracy, consistency and reliability of information
+                        used by internal systems and processes.
+                    </p>
+
+
+                    <div class="experience-tags">
+
+                        <span>DATA QUALITY</span>
+                        <span>VALIDATION</span>
+                        <span>DATA ANALYSIS</span>
+                        <span>AI TRAINING</span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ======================= OUTLIER ======================== -->
+                <article class="experience-card">
+
+                    <div class="experience-header">
+
+                        <div>
+
+                            <p class="experience-status">
+                                REMOTE EXPERIENCE
+                            </p>
+
+                            <h3>
+                                AI TRAINING &amp; EVALUATION
+                            </h3>
+
+                            <span class="experience-company">
+                                OUTLIER
+                            </span>
+
+                        </div>
+
+                        <span class="experience-date">
+                            2026
+                        </span>
+
+                    </div>
+
+
+                    <div class="experience-divider"></div>
+
+
+                    <p class="experience-description">
+                        Worked on AI training and evaluation tasks,
+                        analyzing model responses, applying structured
+                        evaluation criteria and providing detailed
+                        feedback to improve the quality and reliability
+                        of AI systems.
+                    </p>
+
+
+                    <div class="experience-tags">
+
+                        <span>AI EVALUATION</span>
+                        <span>QUALITY ASSURANCE</span>
+                        <span>DATA ANALYSIS</span>
+                        <span>LLM EVALUATION</span>
+
+                    </div>
+
+                </article>
+
 
             </div>
 
         </section>
 
 
-        <!-- ======================= EDUCATION RECORD ======================== -->
+        <!-- ======================= EDUCATION ======================== -->
+        <section id="education" class="section">
 
-        <section id="education">
+            <div class="section-header">
 
-            <h2>EDUCATION RECORD</h2>
+                <span class="section-index">
+                    05
+                </span>
+
+                <div>
+
+                    <p class="section-label">
+                        EDUCATION RECORD
+                    </p>
+
+                    <h2>
+                        EDUCATION
+                    </h2>
+
+                </div>
+
+            </div>
+
 
             <div class="education-card">
 
-                <h3>FATEC Cruzeiro</h3>
+                <div class="education-main">
 
-                <div class="education-course">
-                    Analysis and Systems Development
+                    <p class="education-status">
+                        HIGHER EDUCATION
+                    </p>
+
+                    <h3>
+                        FATEC CRUZEIRO
+                    </h3>
+
+                    <p class="education-course">
+                        Analysis and Systems Development
+                    </p>
+
                 </div>
 
-                <p>
-                    Higher Education — Systems Analysis and Development
-                </p>
 
-                <p>
-                    2024 — PRESENT
-                </p>
+                <div class="education-details">
+
+                    <div>
+
+                        <span>PROGRAM</span>
+
+                        <strong>
+                            SYSTEMS ANALYSIS AND DEVELOPMENT
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>STATUS</span>
+
+                        <strong>
+                            IN PROGRESS
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>PERIOD</span>
+
+                        <strong>
+                            2024 — PRESENT
+                        </strong>
+
+                    </div>
+
+                </div>
 
             </div>
 
@@ -453,68 +812,134 @@
 
 
         <!-- ======================= TRANSMISSION ======================== -->
+        <section id="transmission" class="section">
 
-        <section id="contact" class="contact">
+            <div class="section-header">
 
-            <h2>TRANSMISSION</h2>
+                <span class="section-index">
+                    06
+                </span>
 
-            <p class="contact-description">
-                Interested in technology, software development and opportunities
-                to build useful systems and solve complex problems.
-                Establish a connection through one of the available channels.
-            </p>
+                <div>
 
-            <div class="contact-links">
+                    <p class="section-label">
+                        TRANSMISSION
+                    </p>
 
-                <a
-                    href="https://github.com/Andrerrb"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="contact-link"
-                >
-                    GITHUB
-                </a>
+                    <h2>
+                        CONTACT
+                    </h2>
 
-                <a
-                    href="https://www.linkedin.com/in/andrebatista2330/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="contact-link"
-                >
-                    LINKEDIN
-                </a>
+                </div>
 
-                <a
-                    href="mailto:andrebatista2330@gmail.com"
-                    class="contact-link"
-                >
-                    EMAIL
-                </a>
+            </div>
+
+
+            <div class="contact-grid">
+
+
+                <div class="contact-introduction">
+
+                    <p class="contact-status">
+                        TRANSMISSION CHANNEL OPEN
+                    </p>
+
+                    <h3>
+                        ESTABLISH CONNECTION
+                    </h3>
+
+                    <p>
+                        Interested in software development, backend
+                        systems, APIs, technology and new opportunities.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-links">
+
+
+                    <a
+                        href="https://github.com/Andrerrb"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-link"
+                    >
+
+                        <span class="contact-label">
+                            GITHUB
+                        </span>
+
+                        <span class="contact-value">
+                            github.com/Andrerrb
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="https://www.linkedin.com/in/andrebatista2330/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-link"
+                    >
+
+                        <span class="contact-label">
+                            LINKEDIN
+                        </span>
+
+                        <span class="contact-value">
+                            LinkedIn Profile
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="mailto:andrebatista2330@gmail.com"
+                        class="contact-link"
+                    >
+
+                        <span class="contact-label">
+                            EMAIL
+                        </span>
+
+                        <span class="contact-value">
+                            SEU_EMAIL_AQUI
+                        </span>
+
+                    </a>
+
+
+                </div>
 
             </div>
 
         </section>
 
+
     </main>
 
 
     <!-- ======================= FOOTER ======================== -->
-
     <footer>
 
-        <div>
-            SYSTEM ONLINE · ANDRÉ BATISTA © 2026
-        </div>
+        <div class="footer-content">
 
-        <div class="footer-machine">
-            THE MACHINE SPIRIT ENDURES
+            <span>
+                SYSTEM ONLINE · ANDRÉ BATISTA © 2026
+            </span>
+
+            <span>
+                THE MACHINE SPIRIT ENDURES
+            </span>
+
         </div>
 
     </footer>
 
 
-    <!-- ======================= SCRIPTS ======================== -->
-
+    <!-- ======================= SYSTEM SCRIPT ======================== -->
     <script src="script.js"></script>
 
 </body>
