@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="8" fill="#0a0a0a"/>
+
+  <!-- Outer cog -->
+  <path
+    fill="#b08d57"
+    d="M32 7l4 5.5 6.5-1.5 1.8 6.5 6.5 1.8-1.5 6.5L55 30l-5.5 4 1.5 6.5-6.5 1.8-1.8 6.5-6.5-1.5L32 53l-4-5.5-6.5 1.5-1.8-6.5-6.5-1.8 1.5-6.5L9 32l5.5-4-1.5-6.5 6.5-1.8 1.8-6.5 6.5 1.5L32 7z"
+  />
+
+  <!-- Inner circle -->
+  <circle cx="32" cy="32" r="17" fill="#0a0a0a"/>
+  <circle cx="32" cy="32" r="13" fill="none" stroke="#8f1d1d" stroke-width="3"/>
+
+  <!-- A -->
+  <path
+    d="M24 41l8-19 8 19M27 35h10"
+    fill="none"
+    stroke="#e8e1d4"
+    stroke-width="3"
+    stroke-linecap="square"
+    stroke-linejoin="miter"
+  />
+</svg>
