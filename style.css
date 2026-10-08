@@ -43,8 +43,11 @@ html {
 body {
     background: var(--bg-main);
     color: var(--text-main);
+
     font-family: "Courier New", Courier, monospace;
+
     line-height: 1.6;
+
     overflow-x: hidden;
 }
 
@@ -83,6 +86,7 @@ a {
 
 body::before {
     content: "";
+
     position: fixed;
     inset: 0;
 
@@ -98,12 +102,15 @@ body::before {
         );
 
     background-size: 40px 40px;
+
     pointer-events: none;
+
     z-index: -2;
 }
 
 body::after {
     content: "";
+
     position: fixed;
     inset: 0;
 
@@ -115,6 +122,7 @@ body::after {
         );
 
     pointer-events: none;
+
     z-index: -1;
 }
 
@@ -131,6 +139,7 @@ body::after {
 
 .navbar {
     position: fixed;
+
     top: 0;
     left: 0;
 
@@ -144,6 +153,7 @@ body::after {
     padding: 0 5%;
 
     background: rgba(8, 9, 9, 0.94);
+
     border-bottom: 1px solid var(--border-bronze);
 
     backdrop-filter: blur(8px);
@@ -155,9 +165,11 @@ body::after {
 }
 
 .logo {
-    font-size: 1.35rem;
+    font-size: 1.2rem;
+
     font-weight: bold;
-    letter-spacing: 4px;
+
+    letter-spacing: 3px;
 
     color: var(--bronze-light);
 
@@ -167,6 +179,7 @@ body::after {
 
 .navbar nav {
     display: flex;
+
     gap: 28px;
 }
 
@@ -174,6 +187,7 @@ body::after {
     position: relative;
 
     font-size: 0.72rem;
+
     letter-spacing: 1.5px;
 
     color: var(--text-secondary);
@@ -211,6 +225,7 @@ body::after {
 
 section {
     width: 100%;
+
     max-width: var(--max-width);
 
     margin: 0 auto;
@@ -224,6 +239,7 @@ section h2 {
     margin-bottom: 45px;
 
     font-size: 1.7rem;
+
     font-weight: normal;
 
     letter-spacing: 3px;
@@ -241,10 +257,6 @@ section h2::after {
     content: " ]";
 
     color: var(--red);
-}
-
-section h2 + p {
-    color: var(--text-secondary);
 }
 
 
@@ -301,16 +313,19 @@ section h2 + p {
     color: var(--red);
 }
 
+
+/* ======================= HERO NAME ======================== */
+
 .hero h1 {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 
     font-family: Georgia, "Times New Roman", serif;
 
-    font-size: clamp(3rem, 8vw, 6.5rem);
+    font-size: clamp(2.8rem, 6vw, 4.8rem);
 
     font-weight: normal;
 
-    letter-spacing: 5px;
+    letter-spacing: 4px;
 
     color: var(--text-main);
 
@@ -339,6 +354,8 @@ section h2 + p {
     color: var(--text-secondary);
 
     font-size: 0.95rem;
+
+    line-height: 1.8;
 }
 
 
@@ -346,6 +363,7 @@ section h2 + p {
 
 .hero-buttons {
     display: flex;
+
     flex-wrap: wrap;
 
     gap: 15px;
@@ -353,6 +371,7 @@ section h2 + p {
 
 .btn {
     display: inline-flex;
+
     align-items: center;
     justify-content: center;
 
@@ -367,6 +386,7 @@ section h2 + p {
     color: var(--bronze-light);
 
     font-family: inherit;
+
     font-size: 0.75rem;
 
     letter-spacing: 1.5px;
@@ -436,7 +456,7 @@ section h2 + p {
 }
 
 
-/* ======================= ABOUT ======================== */
+/* ======================= ABOUT / PERSONNEL RECORD ======================== */
 
 .about-grid {
     display: grid;
@@ -451,22 +471,30 @@ section h2 + p {
 .about-text {
     color: var(--text-secondary);
 
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+
+    line-height: 1.8;
 }
 
 .about-text p {
-    margin-bottom: 20px;
+    margin-bottom: 28px;
 }
 
 .about-text strong {
     color: var(--bronze-light);
+
     font-weight: normal;
 }
+
+
+/* ======================= STATUS PANEL ======================== */
 
 .status-panel {
     position: relative;
 
-    padding: 28px;
+    margin-top: 35px;
+
+    padding: 30px;
 
     background:
         linear-gradient(
@@ -502,9 +530,13 @@ section h2 + p {
 
 .status-line {
     display: flex;
-    justify-content: space-between;
 
-    padding: 11px 0;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 15px 0;
 
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 
@@ -521,6 +553,8 @@ section h2 + p {
 
 .status-value {
     color: var(--text-main);
+
+    text-align: right;
 }
 
 .status-online {
@@ -646,6 +680,7 @@ section h2 + p {
     position: relative;
 
     display: flex;
+
     flex-direction: column;
 
     min-height: 300px;
@@ -740,6 +775,8 @@ section h2 + p {
     color: var(--text-secondary);
 
     font-size: 0.8rem;
+
+    line-height: 1.7;
 }
 
 .project-tags {
@@ -787,7 +824,7 @@ section h2 + p {
 }
 
 
-/* ======================= EXPERIENCE ======================== */
+/* ======================= EXPERIENCE / SERVICE RECORD ======================== */
 
 .experience-container {
     position: relative;
@@ -860,12 +897,16 @@ section h2 + p {
     color: var(--text-secondary);
 
     font-size: 0.82rem;
+
+    line-height: 1.8;
 }
 
 
 /* ======================= EDUCATION ======================== */
 
 .education-card {
+    position: relative;
+
     padding: 35px;
 
     background:
@@ -876,8 +917,6 @@ section h2 + p {
         );
 
     border: 1px solid var(--border);
-
-    position: relative;
 }
 
 .education-card::before {
@@ -923,10 +962,12 @@ section h2 + p {
     color: var(--text-secondary);
 
     font-size: 0.78rem;
+
+    line-height: 1.7;
 }
 
 
-/* ======================= CONTACT ======================== */
+/* ======================= CONTACT / TRANSMISSION ======================== */
 
 .contact {
     text-align: center;
@@ -944,6 +985,8 @@ section h2 + p {
     color: var(--text-secondary);
 
     font-size: 0.85rem;
+
+    line-height: 1.8;
 }
 
 .contact-links {
@@ -1080,7 +1123,11 @@ footer {
     .about-grid {
         grid-template-columns: 1fr;
 
-        gap: 35px;
+        gap: 20px;
+    }
+
+    .status-panel {
+        margin-top: 10px;
     }
 
     .skills-grid {
@@ -1177,6 +1224,36 @@ footer {
         letter-spacing: 2px;
     }
 
+    .about-text {
+        font-size: 0.82rem;
+
+        line-height: 1.8;
+    }
+
+    .about-text p {
+        margin-bottom: 24px;
+    }
+
+    .status-panel {
+        margin-top: 5px;
+
+        padding: 22px;
+    }
+
+    .status-line {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 3px;
+
+        padding: 12px 0;
+    }
+
+    .status-value {
+        text-align: left;
+    }
+
     .skill-card,
     .project-card,
     .education-card {
@@ -1217,7 +1294,9 @@ footer {
     *::before,
     *::after {
         animation-duration: 0.01ms !important;
+
         animation-iteration-count: 1 !important;
+
         transition-duration: 0.01ms !important;
     }
 }
